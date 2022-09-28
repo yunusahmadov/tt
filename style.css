@@ -1,0 +1,749 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-size: 20px;
+}
+ul li{
+    list-style: none;   
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 20vh;
+}
+.search{
+    display: flex;
+    gap: 20px;
+}
+
+.header_head_container{
+    max-width: 1192px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 65px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80%;
+}
+.header_nav{
+    display: flex;
+    gap: 20px;
+}
+.header_center{
+    width: 100%;
+    height: 18vh;
+    background-image: url('https://akira-elementor.axonvip.com/modules/nrtthemecustomizer/views/img/bg_breadcrumb.png');
+    margin: 30px 0;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+/* .grid_text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+} */
+.grid_container,
+.page2_grid{
+    margin-top: 150px;
+    max-width: 1385px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(252px,1fr));
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page2_grid{
+    display: none;
+}
+.grid_img img{
+    width: 100%;
+    height: 314px;
+}
+footer{
+    margin-top: 78px;
+}
+.footer_head{
+    width: 100%;
+    height: 15vh;
+    background-color: #F9F9F9;
+}
+.footer_head_grid{
+    max-width: 1114px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 45px;
+}
+.flex_card{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.footer_center{
+    background-image:url('https://akira-elementor.axonvip.com/modules/axoncreator/img/bg-newletter.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 240px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.footer_center h2{
+    font-size:120%;
+}
+.footer_center h3{
+    font-size:80%;
+}
+.email{
+    display: flex;
+    gap: 0;
+}
+.email input{
+width: 300px;
+height: 50px;
+}
+.email button{
+    width: 70px;
+height: 50px;
+}
+.footer_center p{
+    font-size:70%;
+}
+.check{
+    display: flex;
+}
+.footer_bottom{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer_left_bottom{
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    gap: 20px;
+}
+.footer_text{
+    display: flex;
+    gap: 20px;
+}
+.footer_left_bottom img{
+    width: 150px;
+}
+.footer_right_bottom{
+    display: flex;
+    gap: 50px;
+}
+
+
+.footer_right_bottom ul li:first-child{
+    margin-bottom: 20px;
+}
+
+.shop,
+.blog{
+    position: relative;
+    
+}
+.shop_menu{
+    position: absolute;
+    gap: 30px;
+    display: none;
+    background-color: white;
+    width: 800px;
+    height: 300px;
+    top: 50px;
+    left: -150px;
+}
+.shop:hover .shop_menu{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+} 
+.blog_menu{
+    position: absolute;
+    gap: 30px;
+    display: none;
+    background-color: white;
+    width: 100px;
+    height: 200px;
+    top: 50px;
+    left: -30px;
+}
+.blog:hover .blog_menu{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+} 
+.grid_card{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 70%;
+    margin-top: 40px;
+    max-height: 418px;
+}
+
+.grid_card span{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.price{
+color: red;
+}
+/* .grid_card div{
+    overflow: hidden;
+} */
+
+.grid_img{
+position: relative;
+overflow: hidden;
+z-index: 10;
+}
+.discover{
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: -20px;
+    /* display: none; */
+    transition: 0.2s;
+    opacity: 0;
+    color: white;
+    z-index: -11;
+    text-align: center;
+    padding-top: 5px;
+    
+}
+.discover:hover{
+    background-color: blue;
+}
+.grid_card:hover .discover{
+    display: block;
+    bottom:0;
+    opacity: 1;
+    z-index: 11;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 50px;
+    right: -50px;
+    transition: .5s;
+    
+}
+.grid_card:hover .icons{
+    right: 20px;
+}
+.icons i{
+background-color:#343a40 ;
+border-radius: 50%;
+color: white;
+width: 30px;
+padding: 7px;
+}
+.icons i:hover{
+    background-color: blue;
+}
+.compare{
+    width: 100px;
+    background-color: #000;
+    position: absolute;
+    left: -110px;
+    top: 0px;
+    /* display: none; */
+    opacity: 0;
+    padding: 10px;
+    font-size: 10px;
+    transition: .5s;
+}
+.icons i:hover .compare{
+   opacity: 1;
+}
+.wish{
+    width: 140px;
+    background-color: #000;
+    position: absolute;
+    left: -150px;
+    top: 50px;
+    opacity: 0;
+    padding: 10px;
+    font-size: 10px;
+    transition: .5s;
+}
+.icons i:hover .wish{
+    opacity: 1;
+}
+.quick{
+    width: 140px;
+    background-color: #000;
+    position: absolute;
+    left: -150px;
+    top: 95px;
+    opacity: 0;
+    padding: 10px;
+    font-size: 10px;
+    transition: .5s;
+}
+.icons i:hover .quick{
+    opacity: 1;
+}
+
+
+.grid_card:hover{
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.15);
+}
+.grid_img1,
+.grid_img2,
+.grid_img3,
+.grid_img4,
+.grid_img5,
+.grid_img6,
+.grid_img7,
+.grid_img8,
+.grid_img9,
+.grid_img10,
+.grid_img11,
+.grid_img12,
+.grid_img13,
+.grid_img14,
+.grid_img15{
+    width: 100%;
+    height: 300px;
+    background-position:50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.grid_img1{
+    background-image:url(https://akira-elementor.axonvip.com/28-home_default/morbi-vitae-mi.jpg);
+    transition: .5s;
+}
+
+.grid_img1:hover{
+background-image:url(https://akira-elementor.axonvip.com/29-home_default/morbi-vitae-mi.jpg);
+}
+
+
+.grid_img2{
+    background-image:url(https://akira-elementor.axonvip.com/40-home_default/aliquam-erat-volutpat.jpg);
+    transition: .5s;
+}
+
+.grid_img2:hover{
+background-image:url(https://akira-elementor.axonvip.com/41-home_default/aliquam-erat-volutpat.jpg);
+}
+
+.grid_img3{
+    background-image:url(https://akira-elementor.axonvip.com/44-home_default/aliquam-erat-volutpat.jpg);
+    transition: .5s;
+}
+.grid_img4{
+    background-image:url(https://akira-elementor.axonvip.com/49-home_default/ut-male-eleifend.jpg);
+    transition: .5s;
+}
+
+.grid_img4:hover{
+background-image:url(https://akira-elementor.axonvip.com/48-home_default/ut-male-eleifend.jpg);
+}
+
+
+.grid_img5{
+    background-image:url(https://akira-elementor.axonvip.com/53-home_default/maec-vesti-turpis.jpg);
+    transition: .5s;
+}
+
+.grid_img5:hover{
+background-image:url(https://akira-elementor.axonvip.com/52-home_default/maec-vesti-turpis.jpg);
+} 
+.grid_img6{
+    background-image:url(https://akira-elementor.axonvip.com/57-home_default/duis-placerat-eu.jpg);
+    transition: .5s;
+}
+
+.grid_img6:hover{
+background-image:url(https://akira-elementor.axonvip.com/58-home_default/duis-placerat-eu.jpg);
+} 
+
+.grid_img7{
+    background-image:url(https://akira-elementor.axonvip.com/61-home_default/sed-viverra-felis.jpg);
+    transition: .5s;
+}
+.grid_img7:hover{
+    background-image:url(https://akira-elementor.axonvip.com/60-home_default/sed-viverra-felis.jpg);
+} 
+
+.grid_img8{
+    background-image:url(https://akira-elementor.axonvip.com/63-home_default/nulla-ac-euismod.jpg);
+    transition: .5s;
+}
+.grid_img8:hover{
+    background-image:url(https://akira-elementor.axonvip.com/64-home_default/nulla-ac-euismod.jpg);
+} 
+
+
+.grid_img9{
+    background-image:url(https://akira-elementor.axonvip.com/69-home_default/nunc-inter-fringilla.jpg);
+    transition: .5s;
+}
+.grid_img9:hover{
+    background-image:url(https://akira-elementor.axonvip.com/70-home_default/nunc-inter-fringilla.jpg);
+} 
+
+
+.grid_img10{
+    background-image:url(https://akira-elementor.axonvip.com/71-home_default/nunc-inter-fringilla.jpg);
+    transition: .5s;
+}
+.grid_img10:hover{
+    background-image:url(https://akira-elementor.axonvip.com/72-home_default/maecenas-non-massa.jpg);
+} 
+
+
+.grid_img11{
+    background-image:url(https://akira-elementor.axonvip.com/76-home_default/quisque-non-finibus.jpg);
+    transition: .5s;
+}
+.grid_img11:hover{
+    background-image:url(https://akira-elementor.axonvip.com/77-home_default/quisque-non-finibus.jpg);
+} 
+
+
+.grid_img12{
+    background-image:url(https://akira-elementor.axonvip.com/79-home_default/donec-volutpat-elem.jpg);
+    transition: .5s;
+}
+.grid_img12:hover{
+    background-image:url(https://akira-elementor.axonvip.com/80-home_default/donec-volutpat-elem.jpg);
+} 
+
+
+.grid_img13{
+    background-image:url(https://akira-elementor.axonvip.com/82-home_default/quisque-ac-quam.jpg);
+    transition: .5s;
+}
+.grid_img13:hover{
+    background-image:url(https://akira-elementor.axonvip.com/83-home_default/quisque-ac-quam.jpg);
+} 
+
+
+.grid_img14{
+    background-image:url(https://akira-elementor.axonvip.com/85-home_default/integer-nulla-orci.jpg);
+    transition: .5s;
+}
+.grid_img14:hover{
+    background-image:url(https://akira-elementor.axonvip.com/86-home_default/integer-nulla-orci.jpg);
+} 
+.grid_img15{
+    background-image:url(https://akira-elementor.axonvip.com/88-home_default/sed-urna-mauris.jpg);
+    transition: .5s;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 10px;
+}
+.buttons button{
+    padding: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+
+}
+.shop img,
+.elementor img,
+.buy img{
+position: absolute;
+top: -17px;
+left: 0;
+}
+.elementor,
+.buy{
+    position: relative;
+}
+.flag{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    padding: 0px 5px;
+    background-color:#ff7380;
+    color: white;
+    
+}
+.green{
+    display: flex;
+    position: fixed;
+    right: 40px;
+    bottom: 40px; 
+    z-index: 12;
+    background-color: #729c29;
+    color: #fff;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-size: 120%;
+    box-shadow: -6.772px 8.668px 16px 0 rgb(28 30 35 / 15%);
+    
+}
+.green span{
+    font-size: 70%;
+}
+.green::after{
+    content: '';
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: #7cb442;
+    bottom: -18px;
+    right: -18px;
+    animation: scaleout 1.0s infinite ease-in-out;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+@keyframes scaleout
+{
+0%{transform:scale(0)}
+100%{transform:scale(1);opacity:0}
+}
+.stars {
+    display: flex;
+    justify-content: center;
+    color: #d4d4d4;
+  }
+  
+  .stars:hover {
+    color: #f2b827;
+    cursor: pointer;
+  }
+  
+  .stars .fa:hover ~ .fa:before {
+    color: #d4d4d4;
+  }
+  .black-bag{
+    color: #000;
+    position: relative;
+  }
+
+
+  /* Black */
+  .blackbox{
+    position: absolute;
+    width: 130px;
+    height: 150px;
+    background-color: white;
+    top: -160px;
+    left: -40px;
+    z-index: 234;
+    display: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  .blackbox .c{
+    position: absolute;
+    width:128px;
+    height: 110px;
+    top: 1px;
+    left: 0px;
+    background-color: black;
+    border-radius: 5px;
+  }
+  .blackbox p{
+    position: absolute;
+    bottom: 13px;
+    left: 40px;
+    border-radius: 5px;
+  }
+  .black-bag:hover .blackbox{
+    display: block;
+  }
+/* Green */
+.greenbox{
+    position: absolute;
+    width: 130px;
+    height: 150px;
+    background-color: white;
+    top: -160px;
+    left: -40px;
+    z-index: 234;
+    display: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  .greenbox .q{
+    position: absolute;
+    width:128px;
+    height: 110px;
+    top: 1px;
+    left: 0px;
+    background-color: #729c29;
+    border-radius: 5px;
+  }
+  .greenbox p{
+    position: absolute;
+    bottom: 13px;
+    left: 40px;
+    border-radius: 5px;
+  }
+  .green-bag:hover .greenbox{
+    display: block;
+  }
+
+/* Yellow */
+.yellowbox{
+    position: absolute;
+    width: 130px;
+    height: 150px;
+    background-color: white;
+    top: -160px;
+    left: -40px;
+    z-index: 234;
+    display: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  .yellowbox .y{
+    position: absolute;
+    width:128px;
+    height: 110px;
+    top: 1px;
+    left: 0px;
+    background-color: yellow;
+    border-radius: 5px;
+  }
+  .yellowbox p{
+    position: absolute;
+    bottom: 13px;
+    left: 30px;
+    border-radius: 5px;
+    color: #000;
+  }
+  .yellow-bag:hover .yellowbox{
+    display: block;
+  }
+  /* Orange */
+  .orangebox{
+    position: absolute;
+    width: 130px;
+    height: 150px;
+    background-color: white;
+    top: -160px;
+    left: -40px;
+    z-index: 234;
+    display: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  .orangebox .o{
+    position: absolute;
+    width:128px;
+    height: 110px;
+    top: 1px;
+    left: 0px;
+    background-color: orange;
+    border-radius: 5px;
+  }
+  .orangebox p{
+    position: absolute;
+    bottom: 13px;
+    left: 30px;
+    border-radius: 5px;
+    color: #000;
+  }
+  .orange-bag:hover .orangebox{
+    display: block;
+  }
+.green-bag{
+    color: #729c29;
+    position: relative;
+  }
+  .yellow-bag{
+    color: yellow;
+    position: relative;
+  }
+  .orange-bag{
+    color: orange;
+    position: relative;
+  }
+  .orange-bag::after{
+    content:'';
+    margin-top: 4px;
+    width: 14px;
+    height: 1px;
+    background-color: #000;
+    display: none;
+    text-align: center;
+  }
+  .green-bag::after{
+    content:'';
+    margin-top: 4px;
+    width: 14px;
+    height: 1px;
+    background-color: #000;
+    display: none;
+    text-align: center;
+  }
+  .black-bag::after{
+    content:'';
+    margin-top: 4px;
+    width: 14px;
+    height: 1px;
+    background-color: #000;
+    display: none;
+    text-align: center;
+  }
+  .yellow-bag::after{
+    content:'';
+    margin-top: 4px;
+    width: 14px;
+    height: 1px;
+    background-color: #000;
+    display: none;
+    text-align: center;
+  }
+  .color_div{
+   padding: 10px;
+   max-width: 100px;
+   margin: 0 auto;
+  }
+  .orange-bag:hover::after{
+    display: block;
+  }
+
+  .green-bag:hover::after{
+    display: block;
+  }
+  .yellow-bag:hover::after{
+    display: block;
+  }
+
+  .black-bag:hover::after{
+    display: block;
+  }
+
+.fa-circle:focus{
+    /* border-bottom: 1px solid black; */
+    text-decoration: underline;
+    
+}
